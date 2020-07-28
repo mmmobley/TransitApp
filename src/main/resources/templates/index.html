@@ -51,8 +51,11 @@
 			<script th:inline="javascript">
 			/*<![CDATA[*/
 			
-			var busLocations = /*[[${buses}]]*/;
-			var bus = /*[[${bus.VEHICLE}]]*/;
+			/*<![CDATA[*/
+				var coords = {
+				    lat: parseFloat(/*[[${location.lat}]]*/),
+					lng: parseFloat(/*[[${location.lng}]]*/)
+				};
 			
 			/*]]>*/
 			</script>
